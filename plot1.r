@@ -17,7 +17,7 @@ dataExtract <- subset(data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02
 dateTime <- paste(as.Date(dataExtract$Date), dataExtract$Time)
 dataExtract$dateTime <- as.POSIXct(dateTime)
 
-### Plot 1 - Create histogram
+### Plot 1 - Create histogram for Global active power
 hist(dataExtract$Global_active_power, 
 	main = "Global Active Power", 
 	xlab = "Global Active Power (kilowatts)", 
