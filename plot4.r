@@ -21,29 +21,29 @@ dataExtract$dateTime <- as.POSIXct(dateTime)
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
 with(dataExtract, {
 ### 1st Plot
-	plot(dataExtract$dateTime,
-		dataExtract$Global_active_power, 
+	plot(dateTime,
+		Global_active_power, 
 		type = "l", 
 		xlab = "", 
 		ylab = "Global Active Power")
 ### 2nd Plot	
-	plot(dataExtract$dateTime,
-		dataExtract$Voltage, 
+	plot(dateTime,
+		Voltage, 
 		type = "l", 
 		xlab = "datetime", 
 		ylab = "Voltage")
 ### 3rd Plot	
-	plot(dataExtract$dateTime,
-		dataExtract$Sub_metering_1, 
+	plot(dateTime,
+		Sub_metering_1, 
 		type = "l", 
 		xlab = "", 
 		ylab = "Energy sub metering",
 		col = "Black")
-	lines(dataExtract$dateTime,
-		dataExtract$Sub_metering_2, 
+	lines(dateTime,
+		Sub_metering_2, 
 		col = "Red")
-	lines(dataExtract$dateTime,
-		dataExtract$Sub_metering_3,
+	lines(dateTime,
+		Sub_metering_3,
 		col = "Blue")
 	legend("topright", 
 		col = c("Black", "Red", "Blue"), 
@@ -51,8 +51,8 @@ with(dataExtract, {
 		legend = c("Sub_metering_1   ", "Sub_metering_2   ", "Sub_metering_3   "),
 		bty = "n")
 ### 4th Plot
-	plot(dataExtract$dateTime,
-		dataExtract$Global_reactive_power, 
+	plot(dateTime,
+		Global_reactive_power, 
 		type = "l", 
 		xlab = "datetime",
 		ylab = "Global_reactive_power")

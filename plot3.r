@@ -19,17 +19,17 @@ dataExtract$dateTime <- as.POSIXct(dateTime)
 
 ### Plot 3 - Create line graph with sub metering series
 with (dataExtract, {
-	plot(dataExtract$dateTime,
-		dataExtract$Sub_metering_1, 
+	plot(dateTime,
+		Sub_metering_1, 
 		type = "l", 
 		xlab = "", 
 		ylab = "Energy sub metering",
 		col = "Black")
-	lines(dataExtract$dateTime,
-		dataExtract$Sub_metering_2, 
+	lines(dateTime,
+		Sub_metering_2, 
 		col = "Red")
-	lines(dataExtract$dateTime,
-		dataExtract$Sub_metering_3,
+	lines(dateTime,
+		Sub_metering_3,
 		col = "Blue")
 	legend("topright", 
 		col = c("Black", "Red", "Blue"), 
