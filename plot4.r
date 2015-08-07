@@ -49,7 +49,8 @@ with(dataExtract, {
 		col = c("Black", "Red", "Blue"), 
 		lwd = 2,
 		legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-		bty = "n")
+		bty = "n",
+		cex = 0.65)
 ### 4th Plot
 	plot(dataExtract$dateTime,
 		dataExtract$Global_reactive_power, 
