@@ -38,15 +38,15 @@ with(dataExtract, {
 		type = "l", 
 		xlab = "", 
 		ylab = "Energy sub metering",
-		col = "Black")
+		col = "black")
 	lines(dateTime,
 		Sub_metering_2, 
-		col = "Red")
+		col = "red")
 	lines(dateTime,
 		Sub_metering_3,
-		col = "Blue")
+		col = "blue")
 	legend("topright", 
-		col = c("Black", "Red", "Blue"), 
+		col = c("black", "red", "blue"), 
 		lty = 1,
 		legend = c("Sub_metering_1   ", "Sub_metering_2   ", "Sub_metering_3   "),
 		bty = "n")
