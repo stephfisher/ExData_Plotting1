@@ -34,7 +34,8 @@ with (dataExtract, {
 	legend("topright", 
 		col = c("Black", "Red", "Blue"), 
 		lwd = 2,
-		legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+		legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+		cex = 0.75)
 })
 
 ### Copy plot to png file (480x480 pixels) -- don't forget to close the PNG device!
